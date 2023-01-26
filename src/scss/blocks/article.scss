@@ -436,7 +436,7 @@
     z-index: 12;
     pointer-events: none;
 
-    @media ($media_sm) {
+    @media (max-width: 780px) {
       margin-top: 15px;
       position: relative;
       top: auto;
