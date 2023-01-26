@@ -138,31 +138,6 @@ const swiperBlog = new Swiper(".slider-blog", {
 	}
 });
 
-// const swiperArticleLike = new Swiper(".articles-like-slider", {
-// 	modules: [Navigation],
-// 	speed: 800,
-// 	spaceBetween: 6,
-// 	slidesPerView: 4,
-// 	navigation: {
-// 		nextEl: '.articles-like-slider .button-next',
-// 		prevEl: '.articles-like-slider .button-prev'
-// 	},
-// 	breakpoints: {
-// 		1000: {
-// 			slidesPerView: 4,
-// 		},
-// 		750: {
-// 			slidesPerView: 3,
-// 		},
-// 		600: {
-// 			slidesPerView: 2
-// 		},
-// 		320: {
-// 			slidesPerView: 1.5
-// 		}
-// 	}
-// });
-
 
 for (const mobileSlider of document.querySelectorAll('.mobile-slider')) {
 	if (mobileSlider) {
