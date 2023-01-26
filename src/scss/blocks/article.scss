@@ -26,6 +26,10 @@
 .article {
   margin-bottom: 67px;
 
+  & .container--sm {
+    max-width: 750px;
+  }
+
   &__image {
     margin-top: 35px;
     margin-bottom: 30px;
