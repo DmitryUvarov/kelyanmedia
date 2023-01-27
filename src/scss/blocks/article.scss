@@ -86,7 +86,7 @@
 
 .author {
   position: relative;
-  padding: 27px 17px 15px 33px;
+  padding: 27px 17px 27px 33px;
   border-radius: 10px;
   overflow: hidden;
 
@@ -95,7 +95,7 @@
   margin-bottom: 30px;
 
   @media ($media_md2) {
-    padding: 25px 15px 15px;
+    padding: 25px 15px 25px;
     margin-bottom: 25px;
   }
 
@@ -110,6 +110,7 @@
     @media ($media_sm) {
       margin-bottom: 0;
       line-height: 108%;
+      font-size: 20px;
     }
   }
   &__text {
@@ -121,33 +122,6 @@
     max-width: 400px;
     @media ($media_sm) {
       display: none;
-    }
-  }
-  &__link {
-    background: #318692;
-    border-radius: 10px;
-    padding: 13px 53px;
-    font-family: "FuturaPT";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 129%;
-    color: #ffffff;
-    margin-top: 13px;
-    display: block;
-    width: max-content;
-    align-self: flex-end;
-
-    transition: all 0.3s ease;
-    @media (any-hover: hover) {
-      &:hover {
-        background: #39899b;
-      }
-    }
-
-    @media ($media_sm) {
-      font-size: 16px;
-      margin-top: 45px;
     }
   }
   &__image {

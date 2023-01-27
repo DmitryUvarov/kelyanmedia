@@ -20,7 +20,6 @@
 			<div class="author">
 				<div class="author__title">Стань автором нашего блога</div>
 				<p class="author__text">Зарабатывай деньги и получай известность</p>
-				<a href="#" class="author__link">Создать</a>
 				<div class="author__image"><img src="img/blog/author.jpg" alt=""></div>
 			</div>
 
@@ -99,7 +98,7 @@
 				<div class="subscribe">
 					<div class="subscribe__title">Нас уже более 300.000 человек</div>
 					<div class="subscribe__title">Включайтесь</div>
-					<a href="" class="subscribe__link">Подписаться</a>
+					<a href="" class="subscribe__link modal-trigger-btn">Подписаться</a>
 				</div>
 
 				<div class="gift-article">
@@ -180,5 +179,7 @@
 	</div>
 
 	@@include('html/order.html', {})
+
+	@@include('html/modal-blog.html', {})
 
 	@@include('html/footer-blog.html', {})
