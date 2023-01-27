@@ -135,6 +135,7 @@
 }
 
 .header-main__main {
+  column-gap: 20px;
   img {
     max-width: 60px;
     position: relative;
@@ -149,6 +150,10 @@
   grid-gap: 30px;
   position: relative;
   z-index: 10;
+
+  @media (max-width: 1150px) {
+    grid-gap: 0;
+  }
 
   a {
     font-size: 24px;
@@ -165,7 +170,7 @@
     }
   }
 
-  @media ($media_md) {
+  @media (max-width: 1150px) {
     a {
       display: none;
     }
@@ -187,5 +192,58 @@
 
   @media ($media_sm2) {
     max-width: 50px;
+  }
+}
+
+.header-main__contacts {
+}
+.contacts-header {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  margin-left: auto;
+
+  @media (max-width: 1150px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+  }
+
+  &__phone {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    @media (any-hover: hover) {
+      &:hover {
+        color: rgb(79, 110, 164);
+      }
+    }
+  }
+  &__soc {
+    display: flex;
+    align-items: center;
+  }
+  .soc {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    & img {
+      width: 40px;
+      height: 40px;
+      transition: all 0.3s ease;
+      -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.3));
+      filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.3));
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        & img {
+          -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.4));
+          filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.4));
+        }
+      }
+    }
   }
 }
