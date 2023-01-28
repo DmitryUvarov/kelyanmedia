@@ -3,10 +3,10 @@
     padding-left: 50px;
   }
   &__container {
-    max-width: 1070px;
+    max-width: 1070px !important;
   }
   &__body {
-    padding: 45px 0;
+    padding: 45px 0 20px;
     display: flex;
     justify-content: space-between;
 
@@ -152,4 +152,8 @@
       }
     }
   }
+}
+
+.footer-bottom {
+  padding-bottom: 25px;
 }
