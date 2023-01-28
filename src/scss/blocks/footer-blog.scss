@@ -41,7 +41,7 @@
     }
     @media (max-width: 600px) {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       column-gap: 40px;
       row-gap: 24px;
     }
@@ -61,7 +61,7 @@
     font-size: 19px;
     line-height: 126%;
     color: #151515;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 
     @media (max-width: 600px) {
       font-size: 18px;
@@ -77,15 +77,11 @@
     transition: color 0.3s ease;
 
     &:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: 10px;
     }
 
     @media (max-width: 600px) {
       font-size: 16px;
-
-      &:not(:last-child) {
-        margin-bottom: 22px;
-      }
     }
     @media (any-hover: hover) {
       &:hover {
