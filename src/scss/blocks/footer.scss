@@ -1,6 +1,8 @@
 .footer__link {
+  font-family: "FuturaPT";
   font-weight: 400;
-  font-size: 21px;
+  font-size: 15px;
+  line-height: 126%;
   /* identical to box height */
   transition: all 0.2s;
 
@@ -79,8 +81,10 @@
 }
 
 .footer__h3 {
+  font-family: "FuturaPT";
   font-weight: 700;
-  font-size: 22px;
+  font-size: 19px;
+  line-height: 126%;
   color: #303030;
   text-transform: uppercase;
   margin-bottom: 5px;
