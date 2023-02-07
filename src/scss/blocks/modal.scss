@@ -182,7 +182,7 @@
       }
     }
   }
-  & button {
+  & .button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,7 +235,7 @@
       & label {
         background: #39899b;
 
-        & button {
+        & .button {
           background: #4a94a4;
         }
       }
