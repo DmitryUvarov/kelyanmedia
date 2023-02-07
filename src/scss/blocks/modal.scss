@@ -145,6 +145,12 @@
     }
   }
   &__step {
+    &.hide {
+      display: none;
+    }
+    &.show {
+      display: block;
+    }
   }
 
   .modal__close {
@@ -253,6 +259,7 @@
 }
 
 .step-two {
+  display: none;
   padding: 0 80px 0 90px;
 
   @media ($media_sm) {

@@ -1,23 +1,23 @@
-<div class="modal modal-blog">
+<div class="modal modal-blog active">
 
     <div class="modal-blog__body">
 
         <form action="#">
-            <div class="modal-blog__step step-one">
+            <div class="modal-blog__step step-one" data-step="one">
 
                 <div class="modal-blog__title">Куда отправлять чудо материалы?</div>
                 <div class="step-one__blocks">
-                    <div class="step-one__block">
+                    <div class="step-one__block"t>
                         <input type="radio" name="telegram" id="r1">
-                        <label for="r1">
+                        <label for="r1" data-step-next>
                             <img class="step-one__icon" src="img/blog/telegram.svg" alt="">
                             <p>В Telegram</p>
                             <div class="button"><img src="img/blog/arrow-right.svg" alt=""></div>
                         </label>
                     </div>
-                    <div class="step-one__block step-one__block--blue">
+                    <div class="step-one__block step-one__block--blue" >
                         <input type="radio" name="telegram" id="r2">
-                        <label for="r2">
+                        <label for="r2" data-step-next>
                             <img class="step-one__icon" src="img/blog/email.svg" alt="">
                             <p>В Telegram</p>
                             <div class="button"><img src="img/blog/arrow-right.svg" alt=""></div>
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal-blog__step step-two">
+            <div class="modal-blog__step step-two" data-step="two">
                 <div class="modal-blog__title">Введите данные ниже</div>
                 <div class="step-two__line">
                     <label for="inp1">Ваше имя</label>
@@ -41,7 +41,7 @@
                 </div>
                 <button type="submit" class="step-two__submit">Открыть доступ</button>
 
-                <button type="button" class="step-two__back"><img src="img/blog/arrow-left-blue.svg" alt=""></button>
+                <button type="button" class="step-two__back" data-step-back><img src="img/blog/arrow-left-blue.svg" alt=""></button>
 
             </div>
 

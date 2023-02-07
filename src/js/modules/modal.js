@@ -32,3 +32,23 @@ if (document.querySelector('.modal')) {
         closeModalWindow()
     });
 }
+
+document.documentElement.addEventListener('click', (e) => {
+    const targetElement = e.target;
+
+    if (targetElement.closest('[data-step-next]')) {
+        console.log('111')
+         document.querySelector('[data-step="one"]').classList.add('hide')
+         document.querySelector('[data-step="two"]').classList.add('show')
+    }
+    if (targetElement.closest('[data-step-back]')) {
+        document.querySelector('[data-step="one"]').classList.remove('hide')
+        document.querySelector('[data-step="two"]').classList.remove('show')
+    }
+
+    if (!targetElement.closest('.modal-blog.active')) {
+        document.querySelector('[data-step="one"]').classList.remove('hide')
+        document.querySelector('[data-step="two"]').classList.remove('show')
+    }
+
+})
