@@ -37,7 +37,6 @@ document.documentElement.addEventListener('click', (e) => {
     const targetElement = e.target;
 
     if (targetElement.closest('[data-step-next]')) {
-        console.log('111')
          document.querySelector('[data-step="one"]').classList.add('hide')
          document.querySelector('[data-step="two"]').classList.add('show')
     }
@@ -46,7 +45,7 @@ document.documentElement.addEventListener('click', (e) => {
         document.querySelector('[data-step="two"]').classList.remove('show')
     }
 
-    if (!targetElement.closest('.modal-blog.active')) {
+    if (!targetElement.closest('.modal-blog.active') && document.querySelector('.modal-blog')) {
         document.querySelector('[data-step="one"]').classList.remove('hide')
         document.querySelector('[data-step="two"]').classList.remove('show')
     }
