@@ -1,8 +1,296 @@
+.modal {
+  &__claim {
+    background: #000000 center/ cover url("../img/modal/modal_bg_claim.png");
+    width: 100%;
+    max-width: 1012px;
+    min-height: 560px;
+    padding: 15px;
+    position: relative;
+
+    &__content {
+      padding-top: 10px;
+      margin-top: 80px;
+    }
+  }
+
+  &__text {
+    font-size: 27px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 15px;
+    @media ($media_sm) {
+      font-size: 19px;
+    }
+
+    &__left {
+      text-align: left;
+      @media ($media_sm) {
+        text-align: center;
+        @media ($media_sm) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    a {
+      color: #89E2F0;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-bottom: -5px;
+        @media ($media_sm) {
+          display: block;
+          margin: 0 auto;
+          margin-top: 10px;
+          transform: rotate(90deg);
+        }
+
+        path {
+          stroke: #ffffff;
+        }
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    position: absolute;
+
+    &__bottom {
+      bottom: 0;
+    }
+
+    &__right {
+      right: 10px;
+      top: 5px;
+    }
+
+    &__left {
+      top: 0;
+      left: 0;
+    }
+
+    &__warning {
+      margin-top: 15px;
+      @media ($media_sm) {
+        display: none;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__calculate {
+    background: #000000 center/ cover url("../img/modal/calculate_bg.png");
+    width: 100%;
+    max-width: 1012px;
+    min-height: 560px;
+    padding: 15px;
+    position: relative;
+    padding-top: 40px;
+
+    .hystmodal__close {
+      right: 41px;
+    }
+
+    &__content {
+      padding: 10px;
+      background: #1A191E;
+      border-radius: 15px;
+      @media ($media_sm) {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+      }
+    }
+
+    &__left {
+      flex-basis: 44%;
+      padding-left: 100px;
+      @media ($media_sm) {
+        padding-left: 0;
+      }
+    }
+
+    &__right {
+      flex-basis: 47%;
+      @media ($media_sm) {
+        margin-top: 20px;
+      }
+    }
+
+    &__text {
+      p {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 106.7%;
+        text-transform: uppercase;
+        @media ($media_sm) {
+          font-size: 25px;
+        }
+      }
+
+      &__accent {
+        font-weight: 800;
+        color: #C83AB8;
+        display: block;
+      }
+    }
+
+    &__form {
+      display: flex;
+      background: linear-gradient(145.72deg, #E73ED2 0%, rgba(231, 62, 210, 0.34) 58.07%);
+      border-radius: 10px;
+      padding: 30px;
+      height: 100%;
+    }
+  }
+
+  &__form {
+    .control__input {
+      input {
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        width: 100%;
+      }
+    }
+
+    &__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 4px;
+      @media ($media_sm) {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 23px;
+      margin-bottom: 22px;
+      text-align: center;
+      @media ($media_sm) {
+        font-size: 18px;
+      }
+    }
+
+    &__btn {
+      background: #5AC6D8;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 19px;
+      text-transform: uppercase;
+      padding: 15px 0;
+      margin: 0 auto;
+      margin-top: 27px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 344px;
+      position: relative;
+      transition: .4s;
+      @media ($media_sm) {
+        padding: 15px 0;
+        font-size: 17px;
+      }
+
+      svg {
+        width: 27px;
+        height: 27px;
+        padding: 5px;
+        background: #44B8CB;
+        border-radius: 50%;
+        margin-left: 20px;
+
+        path {
+          stroke: #ffffff;
+        }
+      }
+    }
+  }
+
+}
+
+.hystmodal__wrap {
+  @media ($media_sm) {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.hystmodal__close {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M22 2L2 22'/%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M2 2l20 20'/%3E%3C/svg%3E");
+}
+
+.test__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bordered__text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 116.7%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0 2px 2px #075C69;
+  background: #65BCCA;
+  box-shadow: 0px 8px 8px #0D4150;
+  border-radius: 10px;
+  padding: 15px 20px;
+
+  @media ($media_sm) {
+    font-size: 16px;
+  }
+
+  &__big {
+    display: block;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    @media ($media_sm) {
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+    line-height: 114.7%;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(47, 71, 81, 0.5);
+  }
+}
+
+
 .modal-quiz {
   background: rgba(12, 12, 12, 0.6);
   backdrop-filter: none;
   position: absolute;
   top: -9999px;
+
+  &__body {
+    width: 80%;
+    background: #000000 center/ cover url("../img/quiz/quiz_bg.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 50px;
+    @media ($media_sm) {
+      width: 100%;
+      padding: 5px;
+    }
+
+    form {
+    }
+  }
 }
 
 .modal-quiz.active {
@@ -10,38 +298,25 @@
   top: 0;
 }
 
-.modal-quiz__body {
-  width: 80%;
-  background: #000000 center/ cover url("../img/quiz/quiz_bg.png");
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  padding: 50px;
-  @media ($media_sm) {
-    width: 100%;
-    padding: 5px;
-  }
-  form{
-  }
-}
 
-
-.quiz{
-  &__row{
+.quiz {
+  &__row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     @media ($media_sm) {
-     flex-direction: column;
+      flex-direction: column;
     }
   }
-  &__left_part{
+
+  &__left_part {
     width: 44%;
     @media ($media_sm) {
       width: 100%;
     }
-    h3{
+
+    h3 {
       font-family: 'Gilroy';
       font-style: normal;
       font-weight: 400;
@@ -54,7 +329,8 @@
         font-size: 20px;
       }
     }
-    p{
+
+    p {
       font-weight: 500;
       font-size: 18px;
       line-height: 130%;
@@ -66,14 +342,16 @@
         font-size: 15px;
       }
     }
-    img{
+
+    img {
       @media ($media_sm) {
-       max-width: 35%;
+        max-width: 55%;
         margin-bottom: 20px;
       }
     }
   }
-  &__right_part{
+
+  &__right_part {
     width: 44%;
     text-align: left;
     @media ($media_sm) {
@@ -81,14 +359,20 @@
       padding-bottom: 30px;
     }
     //font-family: "Gotham Pro";
-    h3{
+    h3 {
       font-size: 26px;
       margin-bottom: 20px;
+
+      &:first-child {
+        margin-bottom: 5px;
+      }
+
       @media ($media_sm) {
         font-size: 20px;
       }
     }
-    p{
+
+    p {
       font-weight: 500;
       font-size: 16px;
       line-height: 130%;
@@ -97,31 +381,49 @@
       }
     }
   }
-  &__btn{
+
+  &__btn {
     border: 2px solid #2C9EB1;
     background: #2C9EB1;
     box-shadow: -20px 60px 70px rgba(0, 129, 201, 0.2), 0px 30px 60px rgba(0, 129, 201, 0.5), 0px 0px 40px rgba(0, 0, 0, 0.62);
     border-radius: 50px;
     color: #ffffff;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    text-transform: Uppercase;
-    &_end{
+    //text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_end {
       margin-top: 0;
       box-shadow: 0 5px 40px #99F1FF;
     }
-    &:hover{
+
+    &:hover {
       box-shadow: none;
       background: #3ac2d9;
     }
+    span{
+      @media ($media_sm) {
+        margin-top: 4px;
+      }
+    }
 
-    svg{
+    svg {
+      background: #2693A5;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      padding: 5px;
+
       path {
         stroke: #fff;
       }
     }
   }
-  &__group{
-    &_radio{
+
+  &__group {
+    &_radio {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -134,9 +436,10 @@
       }
     }
   }
-  &__prev{
-    width: 61px;
-    height: 61px;
+
+  &__prev {
+    width: 51px;
+    height: 51px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,51 +447,72 @@
     border-radius: 50%;
 
     flex-shrink: 0;
-    &:hover{
+
+    &:hover {
       box-shadow: none;
-      cursor:pointer;
-      border-color: #99F1FF;
+      cursor: pointer;
+      border-color: #2C9EB1;
+
+      svg {
+        path {
+          stroke: #2C9EB1;
+        }
+      }
     }
-    svg{
+
+    svg {
       transform: rotate(180deg);
     }
   }
-  &__next{
+
+  &__next {
     background: #2C9EB1;
     box-shadow: 0 5px 40px #99F1FF;
     border-radius: 50px;
     padding: 17px 50px;
     text-transform: uppercase;
     font-family: 'FuturaPT';
+    height: 50px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 17px;
+    line-height: 16px;
     margin-left: 30px;
-    &:hover{
+
+    &:hover {
       box-shadow: none;
-      cursor:pointer;
+      cursor: pointer;
     }
-    svg{
+
+    svg {
       margin-left: 10px;
     }
   }
-  &__footer{
+
+  &__footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: self-end;
     padding: 50px;
     @media ($media_sm) {
       flex-direction: column;
       padding: 10px;
       padding-bottom: 30px;
+      align-items: center;
     }
   }
-  &__logo{
+
+  &__logo {
     width: 60px;
     height: 70px;
+    @media ($media_sm) {
+      width: 40px;
+      height: 45px;
+    }
   }
-  &__title{
+
+  &__title {
     height: 83px;
     color: #363636;
     overflow: hidden;
@@ -197,44 +521,52 @@
       font-size: 20px;
     }
   }
-  &__form{
-    &__header{
+
+  &__form {
+    &__header {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       padding: 50px;
       @media ($media_sm) {
         padding: 5px;
+        justify-content: space-between;
       }
     }
-    &__first{
+
+    &__first {
       padding-bottom: 100px;
       @media ($media_sm) {
         padding-bottom: 20px;
       }
     }
-    &__content{
+
+    &__content {
       padding: 0 50px;
       @media ($media_sm) {
         padding: 10px;
       }
     }
-    &_white{
+
+    &_white {
       background: #ffffff;
       box-shadow: 0 4px 30px rgb(255 255 255 / 58%);
     }
   }
-  &__close{
+
+  &__close {
     position: absolute;
     top: 60px;
     right: 60px;
     @media ($media_sm) {
-      top: 20px;
-      right: 20px;
+      position: relative;
+      top: auto;
+      right: auto;
     }
-    img{
-      width: 30px;
-      height: 30px;
+
+    img {
+      width: 25px;
+      height: 35px;
     }
   }
 }
@@ -253,12 +585,18 @@
   -ms-user-select: none;
   user-select: none;
   margin-top: 23px;
+
+  &__white {
+    color: #ffffff;
+  }
 }
+
 /* скрываем дефолтный флажок */
 .wrapper__checkbox .check-highload {
   position: absolute;
   opacity: 0;
 }
+
 /* Создаем кастомный checkbox */
 .highload2 {
   position: absolute;
@@ -273,24 +611,29 @@
     width: 18px;
   }
 }
+
 /* При наведении указателя мыши перекрашиваем */
 .wrapper__checkbox:hover .check-highload ~ .highload2 {
   background-color: #ccc;
 }
+
 /* Когда отмечен, то красим в зеленый цвет */
 .wrapper__checkbox .check-highload:checked ~ .highload2 {
   background-color: #2C9EB1;
 }
+
 /* Создаем когда отмечено (не видно, когда не отмечено) */
 .highload2:after {
   content: "";
   position: absolute;
   display: none;
 }
+
 /* Показываем когда отмечен */
 .wrapper__checkbox .check-highload:checked ~ .highload2:after {
   display: block;
 }
+
 /* Стили индикатора */
 .wrapper__checkbox .highload2:after {
   left: 10px;
@@ -313,8 +656,8 @@
   }
 }
 
-.control__input{
-  input{
+.control__input {
+  input {
     border: 1px solid #6D6D6D;
     border-radius: 6px;
     color: #6D6D6D;
@@ -327,7 +670,8 @@
       padding: 11px 20px;
     }
   }
-  button{
+
+  button {
     min-width: 365px;
     @media ($media_sm) {
       width: 100%;
@@ -340,10 +684,16 @@
   position: relative;
   max-width: 500px;
   width: 100%;
-  margin: 30px 0;
   height: 6px;
   background: #D9D9D9;
   border-radius: 6px;
+  margin-bottom: 10px;
+  @media ($media_sm) {
+    width: 80%;
+    min-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 span.progress {
@@ -357,7 +707,7 @@ span.progress {
   transition: all .9s;
 }
 
-.wrapper_percent{
+.wrapper_percent {
   position: absolute;
   left: 0;
   top: -30px;
@@ -368,14 +718,14 @@ span.progress {
   color: #6D6D6D;
 }
 
-.digit__percent{
+.digit__percent {
   font-size: 13px;
   line-height: 130%;
   color: #2C9EB1;
   font-weight: 600;
 }
 
-.radio{
+.radio {
   padding: 16px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
@@ -483,7 +833,21 @@ textarea.form-input {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+
+  &__mob {
+    display: flex !important;
+    @media ($media_sm) {
+      display: none !important;
+    }
+  }
+
+  &__desktop {
+    display: none !important;
+    @media ($media_sm) {
+      display: flex !important;
+    }
+  }
 }
 
 /* для элемента input c type="radio" */
@@ -494,7 +858,7 @@ textarea.form-input {
 }
 
 /* для элемента label связанного с .custom-radio */
-.custom-radio+label {
+.custom-radio + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
@@ -505,7 +869,7 @@ textarea.form-input {
 }
 
 /* создание в label псевдоэлемента  before со следующими стилями */
-.custom-radio+label::before {
+.custom-radio + label::before {
   content: '';
   display: inline-block;
   width: 21px;
@@ -525,34 +889,34 @@ textarea.form-input {
 }
 
 /* стили при наведении курсора на радио */
-.custom-radio:not(:disabled):not(:checked)+label:hover::before {
+.custom-radio:not(:disabled):not(:checked) + label:hover::before {
   box-shadow: 0 0 4px 1px rgba(44, 158, 177, 0.5);
   cursor: pointer;
 }
 
 /* стили для активной радиокнопки (при нажатии на неё) */
-.custom-radio:not(:disabled):active+label::before {
+.custom-radio:not(:disabled):active + label::before {
   box-shadow: 0 0 4px 1px rgba(44, 158, 177, 0.5);
 }
 
 /* стили для радиокнопки, находящейся в фокусе */
-.custom-radio:focus+label::before {
+.custom-radio:focus + label::before {
   box-shadow: 0 0 4px 1px rgba(44, 158, 177, 0.5);
 }
 
 /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
-.custom-radio:focus:not(:checked)+label::before {
+.custom-radio:focus:not(:checked) + label::before {
   box-shadow: 0 0 4px 1px rgba(44, 158, 177, 0.5);
 }
 
 /* стили для радиокнопки, находящейся в состоянии checked */
-.custom-radio:checked+label::before {
+.custom-radio:checked + label::before {
   background-color: #E6E6E6;
   box-shadow: 0 0 4px 1px rgba(44, 158, 177, 0.5);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='%232C9EB1'/%3e%3c/svg%3e");
 }
 
 /* стили для радиокнопки, находящейся в состоянии disabled */
-.custom-radio:disabled+label::before {
+.custom-radio:disabled + label::before {
   background-color: #e9ecef;
 }

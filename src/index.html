@@ -8,7 +8,7 @@
 
 	<div class="main-blocks section">
 		@@include('html/header.html', {})
-
+		@@include('html/blockb.html', {})
 		<div class="advantages">
 			<div class="container">
 				<h2 class="title" data-aos="fade-down">наши преимущества</h2>
@@ -41,6 +41,26 @@
 			</div>
 		</div>
 	</div>
+	<section class="mt-40 mb-40">
+		<div class="container">
+			<div class="test__btn">
+				<a href="#" data-hystmodal="#myModal" class="website-dev__btn quiz__btn">Open modal
+					<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+						 xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.42857 1L14 6.5L8.42857 12M1 6.5H14" stroke="#4F6EA4"
+							  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</a>
+				<a href="#" data-hystmodal="#calculate" class="website-dev__btn quiz__btn">Open modal 2
+					<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+						 xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.42857 1L14 6.5L8.42857 12M1 6.5H14" stroke="#4F6EA4"
+							  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</section>
 
 	<div class="services section">
 		<div class="container">
@@ -188,5 +208,7 @@
 	</div>
 
 	@@include('html/order.html', {})
+	@@include('html/modal-claim.html', {})
+	@@include('html/modal-calculate.html', {})
 
 	@@include('html/footer.html', {})
